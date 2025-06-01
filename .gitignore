@@ -1,3 +1,4 @@
 *.o
 slstatus
 result
+.ccls-cache
