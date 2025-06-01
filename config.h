@@ -14,7 +14,7 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function, format, argument */
     { run_command, "%s ", "mpc --format '%artist% - %title%' | head -1"},
-    { run_command, "%s | ", "mpc status '[%currenttime%/%totaltime%] %state% @ %kbitrate%kbps'"},
+    { run_command, "%s | ", "mpc status 'nr: %songpos% \\[%currenttime%/%totaltime%\\] %volume% Shuffle: %random%'"},
     { cpu_perc,     "CPU: %s%% | ", "NULL" },
     { ram_used,      "RAM: %sB | ", "NULL" },
     { run_command,         "%s | ", "cat ~/keyboardlayout" },
